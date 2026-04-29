@@ -6,7 +6,9 @@ export interface ButtonProps {
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   ariaLabel?: string;
-  redButton?: boolean;
+  colorDarkBlue?: boolean;
+  colorLightBlue?: boolean;
+  colorBeige?: boolean;
   target?: "_self" | "_blank";
   title?: string;
 }

@@ -1,8 +1,18 @@
+import ButtonLink from "@/_components/ui/buttons/button-link";
+import ButtonType from "@/_components/ui/buttons/button-type";
 import PageWrapper from "@/_lib/utils/page-wrapper";
 
 export default function HomePage() {
   return (
     <PageWrapper>
+      <div className="grid gap-5">
+        <div className="bg-dark-blue p-5 grid gap-5">
+          <ButtonLink>White</ButtonLink>
+          <ButtonType colorBeige>Beige</ButtonType>
+        </div>
+        <ButtonLink colorDarkBlue>Dark Blue</ButtonLink>
+        <ButtonLink colorLightBlue>Dark Blue</ButtonLink>
+      </div>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iure
         repellat, mollitia, laborum illo non harum veniam earum dolore qui

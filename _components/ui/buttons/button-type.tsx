@@ -3,6 +3,7 @@
 import { useFormStatus } from "react-dom";
 import { ButtonProps } from "@/_types/button-types";
 import { buttonStyles } from "@/_styles/button-styles";
+import { ArrowUpFromDot } from "lucide-react";
 
 const ButtonType = ({
   children,
@@ -10,18 +11,28 @@ const ButtonType = ({
   cssClasses,
   type = "submit",
   disabled = false,
-  redButton = false,
+  colorDarkBlue = false,
+  colorLightBlue = false,
+  colorBeige = false,
   ariaLabel,
   title,
 }: ButtonProps) => {
   const { pending } = useFormStatus();
+  const iconColor = colorDarkBlue || colorLightBlue ? "#ffffff" : "#2D2C33";
 
   return (
     <button
       type={type}
       onClick={onClick}
       aria-label={ariaLabel}
-      className={buttonStyles(cssClasses, disabled, pending, redButton)}
+      className={buttonStyles(
+        cssClasses,
+        disabled,
+        pending,
+        colorDarkBlue,
+        colorLightBlue,
+        colorBeige,
+      )}
       disabled={disabled || pending}
       title={title}
     >
@@ -30,7 +41,10 @@ const ButtonType = ({
           <div className="spinner"></div>
         </div>
       ) : (
-        <>{children}</>
+        <>
+          {children}
+          <ArrowUpFromDot size={20} color={iconColor} className="rotate-90" />
+        </>
       )}
     </button>
   );
