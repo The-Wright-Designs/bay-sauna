@@ -30,44 +30,60 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
   return (
     <div className={classNames(cssClasses)}>
       <div className="flex w-full items-center justify-between">
-        <Link href="/" className="hover:opacity-90">
-          <Image src="" alt="" width={50} height={50} />
+        <Link href="/" className="flex gap-[6px] items-center">
+          <Image
+            src="/logo/bay-sauna-logo.png"
+            alt="Bay Sauna logo"
+            width={40}
+            height={40}
+          />
+          <h1 className="flex flex-col gap-[2px] text-[16px] text-dark-blue font-semibold tracking-[1.92px]">
+            Bay Sauna
+            <span className="text-[9.5px] text-light-blue font-medium tracking-[0.38px]">
+              Sweat Swim Repeat
+            </span>
+          </h1>
         </Link>
         <button
           onClick={() => setIsOpen(true)}
           className="ease-in-out duration-300 -m-3 p-3"
           aria-label="Open menu"
         >
-          <Menu size={22} color="#FFFFFF" />
+          <Image
+            src="/icons/header/drag_handle.svg"
+            alt="Open menu"
+            width={23}
+            height={11.5}
+          />
         </button>
       </div>
 
       <div
         className={classNames(
-          "fixed inset-0 z-50 transform bg-black transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 transform bg-dark-blue/97 transition-transform duration-300 ease-in-out",
           {
             "translate-x-full": !isOpen,
           },
         )}
       >
-        <div className="flex w-full py-10 items-center px-5 justify-end">
+        <div className="flex w-full py-6 items-center px-5 justify-end">
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
-            className="p-2 -m-2"
+            className="p-2 -m-2 translate-x-1"
           >
-            <X size={22} color="#FFFFFF" />
+            <X size={28} color="#FFFFFF" />
           </button>
         </div>
         <nav className="px-5">
-          <ul className="grid gap-5">
+          <ul className="grid gap-4">
             {navData.map(({ title, url }, id) => {
               return (
                 <li key={id}>
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-[18px] text-white font-light p-3 -m-3"
+                    className="text-paragraph text-white font-light p-3 -m-3"
                   >
                     {title}
                   </Link>

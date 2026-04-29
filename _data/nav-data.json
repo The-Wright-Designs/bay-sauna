@@ -8,8 +8,20 @@
     "url": "/#about"
   },
   {
-    "title": "Services",
-    "url": "/#services"
+    "title": "Health Benefits",
+    "url": "/#health-benefits"
+  },
+  {
+    "title": "Pricing",
+    "url": "/#pricing"
+  },
+  {
+    "title": "How It Works",
+    "url": "/#how-it-works"
+  },
+  {
+    "title": "Founders",
+    "url": "/#founders"
   },
   {
     "title": "Contact",

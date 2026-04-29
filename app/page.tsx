@@ -1,31 +1,43 @@
 import PageWrapper from "@/_lib/utils/page-wrapper";
-import Image from "next/image";
 
 export default function HomePage() {
   return (
     <PageWrapper>
-      <div className="grid place-items-center w-full min-h-screen">
-        <div className="flex flex-col items-center gap-7 border-y-4 border-dark-blue py-7">
-          <h1 className="text-center flex flex-col gap-1 desktop:text-[52px]">
-            <span className="text-center text-[24px] desktop:text-[28px]">
-              The new home of
-            </span>{" "}
-            Bay Sauna
-          </h1>
-          <div className="relative size-[200px] animate-pulse-scale desktop:size-[280px]">
-            <Image
-              src="/logo/bay-sauna-logo.png"
-              alt="Bay Sauna logo"
-              fill
-              sizes="(max-width:800px) 400px, 600px"
-              priority
-            />
-          </div>
-          <h2 className="text-center text-[24px] font-normal desktop:text-[28px]">
-            Is coming soon
-          </h2>
-        </div>
-      </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iure
+        repellat, mollitia, laborum illo non harum veniam earum dolore qui
+        sequi? Nostrum reprehenderit commodi vero delectus aliquid temporibus
+        optio, explicabo a ducimus blanditiis. Quod dicta explicabo soluta
+        aspernatur eveniet quas quisquam non dolore ipsum? Recusandae doloremque
+        earum temporibus culpa ut delectus, debitis soluta aliquid commodi
+        dolores, illum eos eius corporis nemo at saepe nulla quasi, laboriosam
+        hic cumque officia excepturi aliquam dolorem? Alias optio asperiores
+        quasi dolorem animi beatae illo nulla expedita maiores ad nemo excepturi
+        aspernatur tempore iste laudantium aliquid fugiat, quam, iure vitae
+        mollitia. Debitis quidem fugiat quod quasi expedita! Eligendi cupiditate
+        est illo explicabo a reprehenderit laudantium excepturi quo molestias
+        dolorem quas dolore libero eaque earum sit doloremque, totam minus!
+        Molestias excepturi sunt libero nesciunt rem? Beatae labore molestias
+        odio atque saepe voluptas cum molestiae laudantium quibusdam aperiam
+        quam nisi fugiat, sit nihil suscipit vero voluptate temporibus accusamus
+        sint veniam ullam dicta, consequatur voluptatem. Vitae facere, assumenda
+        laboriosam provident sequi incidunt sint repellendus velit autem quaerat
+        totam voluptatem officiis ipsam quos quas vel, perspiciatis esse vero
+        officia necessitatibus? Beatae veritatis exercitationem praesentium
+        ratione nesciunt ipsa, sed omnis magnam sunt expedita iusto. Magnam
+        quisquam, quibusdam laborum, explicabo laboriosam ut corporis tempore
+        asperiores exercitationem delectus quia earum optio. At fugit doloribus
+        soluta mollitia dicta delectus porro quidem unde quo enim voluptas
+        excepturi corporis cupiditate, deserunt voluptatum assumenda laborum
+        labore quas velit dolor repellat. Quae, iure enim asperiores ducimus
+        iste illo dolorem provident assumenda aliquid, modi voluptates. Quod cum
+        ratione repellat ipsum tempora repudiandae amet minus sequi. Delectus,
+        et iste. Earum quas autem provident quam minus dolorum ad corporis
+        aperiam, eligendi ipsum velit unde inventore aliquam blanditiis illum,
+        saepe et esse? Recusandae fugit sint animi velit et ex, ullam corrupti
+        id! Perspiciatis placeat facilis, molestias explicabo accusantium, nobis
+        numquam voluptatem odit cupiditate expedita optio sit laborum.
+      </p>
     </PageWrapper>
   );
 }

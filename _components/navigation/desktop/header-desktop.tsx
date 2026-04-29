@@ -10,15 +10,26 @@ interface DesktopHeaderProps {
 const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
   return (
     <div className={classNames(cssClasses)}>
-      <div className="flex items-center justify-between">
-        <Link href="/" className="hover:opacity-90">
-          <Image src="" alt="" width={50} height={50} />
+      <div className="flex items-end justify-between">
+        <Link href="/" className="flex gap-[6px] items-center hover:opacity-90">
+          <Image
+            src="/logo/bay-sauna-logo.png"
+            alt="Bay Sauna logo"
+            width={52}
+            height={52}
+          />
+          <h1 className="flex flex-col gap-[2px] text-[20px] text-dark-blue font-semibold tracking-[2.4px]">
+            Bay Sauna
+            <span className="text-[11.85px] text-light-blue font-medium tracking-[0.474px]">
+              Sweat Swim Repeat
+            </span>
+          </h1>
         </Link>
         <nav className="flex gap-3 items-end">
           {navData.map((item) => (
             <Link
               key={item.title}
-              className="text-white text-base font-light desktop:hover:text-blue"
+              className="text-black font-light desktop:hover:text-blue"
               href={item.url}
             >
               {item.title}
