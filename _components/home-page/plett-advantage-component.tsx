@@ -3,7 +3,7 @@ import ButtonLink from "@/_components/ui/buttons/button-link";
 
 export default function PlettAdvantageComponent() {
   return (
-    <section className="grid gap-10 desktop:grid-cols-2">
+    <main className="grid gap-10 desktop:grid-cols-2">
       <div className="flex flex-col gap-10 desktop:order-last">
         <h2 className="text-dark-blue font-normal">
           <span className="text-dark-blue text-heading">The Plett </span>
@@ -41,6 +41,6 @@ export default function PlettAdvantageComponent() {
         className="aspect-video object-cover desktop:h-full desktop:aspect-auto desktop:w-auto"
         sizes="(max-width: 1279px), 100vw, 620px"
       />
-    </section>
+    </main>
   );
 }
