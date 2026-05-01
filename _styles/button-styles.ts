@@ -20,7 +20,7 @@ export const buttonStyles = (
       "bg-light-blue text-white": colorLightBlue,
       "bg-beige text-black": colorBeige,
       "bg-white text-black": isDefault,
-      "desktop:hover:opacity-90":
+      "tablet:hover:opacity-90":
         (colorDarkBlue || colorLightBlue || colorBeige || isDefault) && active,
     },
   );

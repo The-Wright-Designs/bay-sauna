@@ -17,7 +17,8 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
   return (
     <Swiper
       autoplay={{
-        delay: 6000,
+        delay: 5000,
+        disableOnInteraction: true,
       }}
       spaceBetween={12}
       speed={1000}
@@ -31,7 +32,7 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
       loop
     >
       {data.map((slide, index) => (
-        <SwiperSlide key={index} className="pb-8">
+        <SwiperSlide key={index}>
           <Image
             src={slide}
             alt={`Slideshow - Image ${index + 1}`}
