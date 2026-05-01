@@ -2,7 +2,9 @@ import HeroSlider from "./hero-slider";
 import ButtonLink from "@/_components/ui/buttons/button-link";
 import sliderData from "@/_data/general-data.json";
 
-const { heroSlider } = sliderData;
+const {
+  homePage: { heroSlider },
+} = sliderData;
 
 export default function HeroComponent() {
   return (

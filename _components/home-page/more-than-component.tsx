@@ -29,6 +29,7 @@ export default function MoreThanComponent() {
         width={1280}
         height={800}
         className="aspect-video object-cover desktop:col-start-2 desktop:row-span-2 desktop:aspect-auto desktop:h-full desktop:w-auto"
+        sizes="(max-width: 1279px), 100vw, 620px"
       />
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-5">
@@ -42,7 +43,7 @@ export default function MoreThanComponent() {
           href="#how-it-works"
           ariaLabel="How it works"
           colorLightBlue
-          cssClasses="desktop:self-start"
+          cssClasses="tablet:self-start"
         >
           How It Works
         </ButtonLink>

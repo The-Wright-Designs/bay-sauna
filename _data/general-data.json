@@ -1,9 +1,63 @@
 {
-  "heroSlider": [
-    "/images/home-page/hero-slider/ayla-meinberg-RKwnTrR9V-s-unsplash.jpg",
-    "/images/home-page/hero-slider/pexels-burakeroglu3-35495086.jpg",
-    "/images/home-page/hero-slider/pexels-huum-sauna-heaters-718199222-31092914.jpg",
-    "/images/home-page/hero-slider/trent-bradley-NKee5ABptKs-unsplash.jpg",
-    "/images/home-page/hero-slider/virgil-cayasa-ZLALgWsPhlE-unsplash.jpg"
-  ]
+  "homePage": {
+    "heroSlider": [
+      "/images/home-page/hero-slider/ayla-meinberg-RKwnTrR9V-s-unsplash.jpg",
+      "/images/home-page/hero-slider/pexels-burakeroglu3-35495086.jpg",
+      "/images/home-page/hero-slider/pexels-huum-sauna-heaters-718199222-31092914.jpg",
+      "/images/home-page/hero-slider/trent-bradley-NKee5ABptKs-unsplash.jpg",
+      "/images/home-page/hero-slider/virgil-cayasa-ZLALgWsPhlE-unsplash.jpg"
+    ],
+    "healthBenefits": [
+      {
+        "title": "Sweat. Swim. Repeat.",
+        "paragraphs": [
+          "There's something deeply instinctive about moving between heat and cold. Long before it became a global wellness trend, cultures across Scandinavia, Eastern Europe, and Asia embraced this simple ritual: heat the body, cool it down, and repeat.",
+          "At Bay Sauna, this experience comes to life on the shores of Central Beach, Plettenberg Bay — where traditional Nordic-style, wood-fired sauna meets the invigorating Indian Ocean."
+        ]
+      },
+      {
+        "title": "A Natural Reset for Body and Mind",
+        "paragraphs": [
+          "The combination of sauna heat and cold-water immersion stimulates circulation, encouraging healthy blood flow throughout the body. As your heart rate rises in the sauna and then slows again in the ocean, your cardiovascular system is gently activated.",
+          "Research from University of Eastern Finland has shown that regular sauna use is associated with improved heart health and reduced risk of cardiovascular disease.",
+          "At the same time, the heat-and-cold cycle promotes the release of endorphins — helping to create that calm, clear-headed feeling many people notice after a session."
+        ]
+      },
+      {
+        "title": "Muscle Recovery & Pain Relief",
+        "paragraphs": [
+          "Heat therapy is widely used to ease muscle tension and joint stiffness. The sauna helps muscles relax and improves circulation, supporting recovery and reducing discomfort.",
+          "Cold-water immersion, often used by athletes, may help reduce inflammation and muscle soreness. Studies published in the Journal of Science and Medicine in Sport suggest that alternating hot and cold exposure can support post-exercise recovery and reduce delayed onset muscle soreness."
+        ]
+      },
+      {
+        "title": "Stress Reduction & Mental Wellbeing",
+        "paragraphs": [
+          "Stepping into the sauna naturally slows things down. Breathing deepens, distractions fall away, and the body shifts into a more relaxed state.",
+          "Exposure to heat has been linked to reduced levels of cortisol (the body's primary stress hormone), while cold-water immersion may improve mood and resilience. Research from Stanford University indicates that cold exposure can significantly increase dopamine levels — contributing to improved mood and mental clarity."
+        ]
+      },
+      {
+        "title": "Improved Sleep & Lasting Energy",
+        "paragraphs": [
+          "Regular sauna use has been associated with improved sleep quality. The gentle rise and fall in body temperature helps regulate the body's natural sleep cycles, promoting deeper rest.",
+          "Meanwhile, cold-water immersion often produces a noticeable boost in alertness and energy, thanks to the activation of the nervous system — leaving you feeling refreshed without relying on stimulants."
+        ]
+      },
+      {
+        "title": "A Gentle Detox",
+        "paragraphs": [
+          "As your body heats up, you begin to sweat — one of the body's natural processes for releasing waste products. While the body's primary detoxification systems remain the liver and kidneys, sweating can support overall physiological balance and contribute to that feeling of lightness and renewal after sauna use."
+        ]
+      },
+      {
+        "title": "More Than Just a Sauna",
+        "paragraphs": [
+          "Perhaps the most powerful benefit is the simplest: how it makes you feel.",
+          "The rhythm of sweat, swim, repeat encourages presence, connection, and a sense of wellbeing that lingers long after you've left the beach.",
+          "Whether you're seeking recovery, relaxation, or simply a new way to feel good, Bay Sauna offers a ritual that is both ancient and refreshingly modern."
+        ]
+      }
+    ]
+  }
 }
