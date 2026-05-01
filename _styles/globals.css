@@ -79,6 +79,10 @@
   html {
     scroll-behavior: smooth;
   }
+
+  img {
+    @apply rounded-md
+  }
 }
 
 @keyframes pulse-scale {

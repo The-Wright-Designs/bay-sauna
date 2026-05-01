@@ -36,7 +36,7 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
           <Image
             src={slide}
             alt={`Slideshow - Image ${index + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-none"
             width={1280}
             height={600}
             loading={index < 1 ? "eager" : "lazy"}
