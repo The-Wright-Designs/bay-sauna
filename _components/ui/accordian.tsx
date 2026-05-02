@@ -22,7 +22,7 @@ const Accordion = () => {
           <div key={index} className="border-b border-white/50">
             <button
               onClick={() => toggle(index)}
-              className="flex justify-between items-center w-full py-5 gap-10 tablet:hover:cursor-pointer tablet:hover:scale-[102%] delay-75 ease-in-out duration-300"
+              className="flex justify-between items-center w-full py-5 gap-10 tablet:hover:cursor-pointer tablet:hover:scale-[101.5%] tablet:hover:opacity-90 delay-75 ease-in-out duration-300"
             >
               <p className="text-subheading text-white text-left">
                 {item.title}

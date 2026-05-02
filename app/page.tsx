@@ -6,6 +6,7 @@ import PlettAdvantageComponent from "@/_components/home-page/plett-advantage-com
 import PageWrapper from "@/_lib/utils/page-wrapper";
 
 import generalData from "@/_data/general-data.json";
+import PriceListComponent from "@/_components/home-page/price-list/price-list-component";
 
 const {
   homePage: { howItWorks },
@@ -23,6 +24,7 @@ export default function HomePage() {
       <PageWrapper cssClasses="py-15">
         <HowItWorksComponent steps={howItWorks} />
       </PageWrapper>
+      <PriceListComponent />
     </div>
   );
 }

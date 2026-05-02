@@ -22,7 +22,7 @@ const ReadyToJoin = ({ cssClasses }: Props) => {
           <strong>Sweat. Swim. Repeat.</strong>
         </p>
         <ButtonLink
-          href="/contact"
+          href="/#contact"
           colorDarkBlue
           cssClasses="w-full tablet:w-auto"
         >

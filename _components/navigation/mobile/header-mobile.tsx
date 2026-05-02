@@ -54,6 +54,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
             alt="Open menu"
             width={23}
             height={11.5}
+            className="w-[23px] h-auto"
           />
         </button>
       </div>

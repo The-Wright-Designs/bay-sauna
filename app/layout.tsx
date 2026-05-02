@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/_styles/globals.css";
 import HeaderComponent from "@/_components/navigation/header-component";
 import FooterComponent from "@/_components/navigation/footer-component";
+import RecaptchaProvider from "@/_components/providers/recaptcha-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.baysauna.co.za"),
@@ -43,9 +44,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <HeaderComponent />
-        {children}
-        <FooterComponent />
+        <RecaptchaProvider>
+          <HeaderComponent />
+          {children}
+          <FooterComponent />
+        </RecaptchaProvider>
       </body>
     </html>
   );
