@@ -3,6 +3,7 @@ import HeroComponent from "@/_components/home-page/hero/hero-component";
 import HowItWorksComponent from "@/_components/home-page/how-it-works/how-it-works-component";
 import MoreThanComponent from "@/_components/home-page/more-than-component";
 import PlettAdvantageComponent from "@/_components/home-page/plett-advantage-component";
+import PlettLocalsComponent from "@/_components/home-page/plett-locals";
 import PageWrapper from "@/_lib/utils/page-wrapper";
 
 import generalData from "@/_data/general-data.json";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <PageWrapper cssClasses="flex flex-col gap-15 pb-15">
         <MoreThanComponent />
         <PlettAdvantageComponent />
+        <PlettLocalsComponent />
       </PageWrapper>
       <HealthBenefitsComponent />
       <PageWrapper cssClasses="py-15">
@@ -27,6 +29,9 @@ export default function HomePage() {
       </PageWrapper>
       <PriceListComponent />
       <SaunaEtiquetteComponent />
+      <PageWrapper>
+        <PlettLocalsComponent />
+      </PageWrapper>
     </div>
   );
 }
