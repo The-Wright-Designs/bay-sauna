@@ -5,7 +5,7 @@ import ButtonLink from "@/_components/ui/buttons/button-link";
 export default function HealthBenefitsComponent() {
   return (
     <section className="bg-light-blue">
-      <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-[1fr_320px] desktop:h-[1252px] min-[1360px]:px-0">
+      <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-[1fr_320px] desktop:h-[1292px] min-[1360px]:px-0">
         <h2 className="text-white desktop:hidden">Health Benefits</h2>
         <div className="flex flex-col gap-10 tablet:flex-row desktop:flex-col">
           <div className="relative aspect-video w-full desktop:aspect-auto desktop:h-full">

@@ -198,6 +198,11 @@
   content: "prev";
 }
 
+.swiper-etiquette-prev.swiper-button-disabled,
+.swiper-etiquette-next.swiper-button-disabled {
+  @apply opacity-30 cursor-not-allowed pointer-events-none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

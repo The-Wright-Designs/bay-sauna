@@ -7,6 +7,7 @@ import PageWrapper from "@/_lib/utils/page-wrapper";
 
 import generalData from "@/_data/general-data.json";
 import PriceListComponent from "@/_components/home-page/price-list/price-list-component";
+import SaunaEtiquetteComponent from "@/_components/home-page/sauna-etiquette/sauna-etiquette-component";
 
 const {
   homePage: { howItWorks },
@@ -25,6 +26,7 @@ export default function HomePage() {
         <HowItWorksComponent steps={howItWorks} />
       </PageWrapper>
       <PriceListComponent />
+      <SaunaEtiquetteComponent />
     </div>
   );
 }

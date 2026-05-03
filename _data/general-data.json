@@ -69,6 +69,48 @@
           "Whether you're seeking recovery, relaxation, or simply a new way to feel good, Bay Sauna offers a ritual that is both ancient and refreshingly modern."
         ]
       }
+    ],
+    "saunaEtiquette": [
+      {
+        "heading": "Please shower at home before arriving",
+        "paragraph": "Clean bodies make for a better sauna experience for you, and everyone else."
+      },
+      {
+        "heading": "Always sit on your towel",
+        "paragraph": "Your towel must be between you and the wood at all times — this keeps the sauna clean and hygienic for everyone."
+      },
+      {
+        "heading": "Keep voices calm and relaxed",
+        "paragraph": "Soft conversation is welcome, but please be mindful of the peaceful atmosphere."
+      },
+      {
+        "heading": "Stay hydrated",
+        "paragraph": "Bring water and drink regularly — sauna sessions can be intense."
+      },
+      {
+        "heading": "No phones inside",
+        "paragraph": "Take a break from screens and enjoy the moment."
+      },
+      {
+        "heading": "Be mindful of personal space",
+        "paragraph": "Give others room to relax — not everyone wants to be shoulder-to-shoulder."
+      },
+      {
+        "heading": "Ask before adding water to the stones",
+        "paragraph": "Adding steam increases the heat quickly — always check with others first."
+      },
+      {
+        "heading": "Listen to your body",
+        "paragraph": "10–20 minutes is usually enough. Step out at any time if you feel too hot or uncomfortable."
+      },
+      {
+        "heading": "Leave the space as you found it",
+        "paragraph": "Take your belongings with you and help keep the sauna neat for the next guests."
+      },
+      {
+        "heading": "Relax and enjoy",
+        "paragraph": "Slow down, breathe deeply, and enjoy the experience."
+      }
     ]
   }
 }
