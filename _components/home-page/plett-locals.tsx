@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function PlettLocalsComponent() {
   return (
     <section
-      id="plett-locals"
-      className="grid gap-10 py-15 min-[1000px]:flex flex-row-reverse min-[1000px]:items-center"
+      id="founders"
+      className="grid gap-10 scroll-mt-16 py-15 min-[1000px]:flex flex-row-reverse min-[1000px]:items-center desktop:scroll-mt-20"
     >
       <div className="flex flex-col gap-10">
         <h2 className="text-dark-blue font-normal">
@@ -35,7 +35,7 @@ export default function PlettLocalsComponent() {
         alt="Stu and Steph, founders of Bay Sauna"
         width={427}
         height={427}
-        className="aspect-square object-cover max-w-[427px] h-auto tablet:w-full"
+        className="aspect-square object-cover w-[427px] h-auto"
         sizes="427px"
       />
     </section>

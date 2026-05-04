@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import EtiquetteCard from "@/_components/home-page/sauna-etiquette/etiquette-card";
+import classNames from "classnames";
 
 interface EtiquetteItem {
   heading: string;
@@ -27,9 +28,9 @@ export default function EtiquetteSlider({ data }: Props) {
           <ArrowUpFromDot color="#ffffff" className="-rotate-90" size={20} />
         </button>
 
-        <div className="pt-2 px-2 -ml-2 -mt-2 overflow-hidden">
+        <div>
           <Swiper
-            spaceBetween={40}
+            spaceBetween={32}
             slidesPerView={1}
             breakpoints={{
               600: {
@@ -53,7 +54,7 @@ export default function EtiquetteSlider({ data }: Props) {
             }}
           >
             {data.map((item, index) => (
-              <SwiperSlide key={index} className="pb-8">
+              <SwiperSlide key={index} className="pb-8 pt-2 pl-2">
                 <EtiquetteCard
                   heading={item.heading}
                   paragraph={item.paragraph}

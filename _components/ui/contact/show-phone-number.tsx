@@ -10,6 +10,7 @@ import { ShowPhoneNumberProps } from "@/_types/general-types";
 const ShowPhoneNumber = ({
   buttonClasses,
   linkClasses,
+  blackText = false,
 }: ShowPhoneNumberProps) => {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [showPhone, setShowPhone] = useState("Show phone number");
@@ -37,14 +38,15 @@ const ShowPhoneNumber = ({
       <button
         onClick={handleShowPhoneNumber}
         className={classNames(
-          "text-paragraph text-beige text-left italic self-start tablet:hover:cursor-pointer tablet:hover:opacity-90",
+          "text-paragraph text-left italic self-start desktop:hover:cursor-pointer desktop:hover:opacity-90",
+          blackText ? "text-black" : "text-beige",
           buttonClasses,
         )}
         aria-label="Show phone number"
       >
         {showSpinnerPhone ? (
           <div>
-            <div className="spinner"></div>
+            <div className={blackText ? "spinner-blue" : "spinner"}></div>
           </div>
         ) : (
           showPhone
@@ -57,7 +59,8 @@ const ShowPhoneNumber = ({
     <Link
       href={`tel:${showPhone}`}
       className={classNames(
-        "text-paragraph text-beige self-start",
+        "text-paragraph self-start tablet:hover:opacity-90",
+        blackText ? "text-black" : "text-beige",
         linkClasses,
       )}
     >

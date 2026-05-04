@@ -9,6 +9,7 @@ import PageWrapper from "@/_lib/utils/page-wrapper";
 import generalData from "@/_data/general-data.json";
 import PriceListComponent from "@/_components/home-page/price-list/price-list-component";
 import SaunaEtiquetteComponent from "@/_components/home-page/sauna-etiquette/sauna-etiquette-component";
+import ContactComponent from "@/_components/home-page/contact/contact-component";
 
 const {
   homePage: { howItWorks },
@@ -21,7 +22,6 @@ export default function HomePage() {
       <PageWrapper cssClasses="flex flex-col gap-15 pb-15">
         <MoreThanComponent />
         <PlettAdvantageComponent />
-        <PlettLocalsComponent />
       </PageWrapper>
       <HealthBenefitsComponent />
       <PageWrapper cssClasses="py-15">
@@ -31,6 +31,7 @@ export default function HomePage() {
       <SaunaEtiquetteComponent />
       <PageWrapper>
         <PlettLocalsComponent />
+        <ContactComponent />
       </PageWrapper>
     </div>
   );

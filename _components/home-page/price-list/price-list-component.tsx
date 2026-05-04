@@ -4,7 +4,10 @@ import EventsComponent from "@/_components/home-page/price-list/events-component
 
 export default function PriceListComponent() {
   return (
-    <section className="bg-black">
+    <section
+      className="bg-black scroll-mt-16 desktop:scroll-mt-20"
+      id="pricing"
+    >
       <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-3 min-[1360px]:px-0">
         <div className="flex flex-col gap-10 desktop:gap-7">
           <div className="flex flex-col gap-10">

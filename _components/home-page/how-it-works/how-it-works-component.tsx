@@ -8,7 +8,10 @@ interface Props {
 
 export default function HowItWorksComponent({ steps }: Props) {
   return (
-    <section className="grid gap-10 desktop:grid-cols-[430px_1fr] desktop:gap-0">
+    <section
+      className="grid gap-10 scroll-mt-32 desktop:scroll-mt-36 desktop:grid-cols-[430px_1fr] desktop:gap-0"
+      id="how-it-works"
+    >
       <div className="flex flex-col gap-10">
         <h2 className="text-dark-blue">
           <span className="font-normal text-heading text-dark-blue">

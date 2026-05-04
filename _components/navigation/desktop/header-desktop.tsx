@@ -29,7 +29,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
           {navData.map((item) => (
             <Link
               key={item.title}
-              className="text-black font-light desktop:hover:text-blue"
+              className="text-black font-light tablet:hover:text-light-blue"
               href={item.url}
             >
               {item.title}

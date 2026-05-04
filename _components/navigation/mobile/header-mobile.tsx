@@ -36,6 +36,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
             alt="Bay Sauna logo"
             width={40}
             height={40}
+            className="rounded-none"
           />
           <h1 className="flex flex-col gap-[2px] text-[16px] text-dark-blue font-semibold tracking-[1.92px]">
             Bay Sauna
@@ -54,7 +55,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
             alt="Open menu"
             width={23}
             height={11.5}
-            className="w-[23px] h-auto"
+            className="w-[23px] h-auto rounded-none"
           />
         </button>
       </div>

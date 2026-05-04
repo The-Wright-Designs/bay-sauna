@@ -3,7 +3,10 @@ import ButtonLink from "@/_components/ui/buttons/button-link";
 
 export default function MoreThanComponent() {
   return (
-    <section className="grid gap-10 pt-15 desktop:grid-cols-2">
+    <section
+      className="grid gap-10 pt-15 scroll-mt-16 desktop:scroll-mt-20 desktop:grid-cols-2"
+      id="about"
+    >
       <div className="flex flex-col gap-10">
         <h2 className="text-dark-blue">
           <span className="font-normal text-heading text-dark-blue">

@@ -44,6 +44,7 @@ export default function EventsComponent({ cssClasses }: Props) {
                 href="#"
                 aria-label="Get in touch on WhatsApp"
                 className="tablet:hover:opacity-80"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

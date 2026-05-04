@@ -10,6 +10,7 @@ import { ShowEmailAddressProps } from "@/_types/general-types";
 const ShowEmailAddress = ({
   buttonClasses,
   linkClasses,
+  blackText = false,
 }: ShowEmailAddressProps) => {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [showEmail, setShowEmail] = useState("Show email address");
@@ -37,14 +38,15 @@ const ShowEmailAddress = ({
       <button
         onClick={handleShowEmailAddress}
         className={classNames(
-          "text-paragraph text-beige text-left italic self-start tablet:hover:cursor-pointer tablet:hover:opacity-90",
+          "text-paragraph text-left italic self-start desktop:hover:cursor-pointer desktop:hover:opacity-90",
+          blackText ? "text-black" : "text-beige",
           buttonClasses,
         )}
         aria-label="Show email address"
       >
         {showSpinnerEmail ? (
           <div>
-            <div className="spinner"></div>
+            <div className={blackText ? "spinner-blue" : "spinner"}></div>
           </div>
         ) : (
           showEmail
@@ -57,7 +59,8 @@ const ShowEmailAddress = ({
     <Link
       href={`mailto:${showEmail}`}
       className={classNames(
-        "text-paragraph text-beige self-start",
+        "text-paragraph self-start tablet:hover:opacity-90",
+        blackText ? "text-black" : "text-beige",
         linkClasses,
       )}
     >
