@@ -34,7 +34,7 @@ export default function HowItWorksComponent({ steps }: Props) {
       <div className="flex flex-col gap-10 relative">
         <div className="relative h-full">
           <Image
-            src="/images/home-page/901a2416a25a937b4aec05bd49ec89f37a7cd3d0.jpg"
+            src="/images/BaySauna-08-LR.jpg"
             alt="People relaxing inside Bay Sauna"
             width={1280}
             height={1000}
@@ -49,7 +49,7 @@ export default function HowItWorksComponent({ steps }: Props) {
             }}
           />
         </div>
-        <ReadyToJoin cssClasses="desktop:absolute desktop:bottom-10 desktop:left-1/2 desktop:-translate-x-1/2 desktop:bg-white/90 desktop:p-7 desktop:rounded-md desktop:border-none desktop:h-auto desktop:w-[500px]" />
+        <ReadyToJoin cssClasses="desktop:absolute desktop:top-8 desktop:left-1/2 desktop:-translate-x-1/2 desktop:bg-white/90 desktop:p-5 desktop:rounded-md desktop:border-none desktop:h-auto desktop:w-[500px]" />
       </div>
     </section>
   );

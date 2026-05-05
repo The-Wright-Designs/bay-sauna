@@ -13,7 +13,7 @@ export default function HealthBenefitsComponent() {
         <div className="flex flex-col gap-10 tablet:flex-row desktop:flex-col">
           <div className="relative aspect-video w-full desktop:aspect-auto desktop:h-full">
             <Image
-              src="/images/home-page/ccd86e57181b8253ed3a837d38d15325ca52422f.jpg"
+              src="/images/AdobeStock_313785803.jpeg"
               alt="People enjoying the sauna"
               fill
               className="object-cover"
@@ -22,7 +22,7 @@ export default function HealthBenefitsComponent() {
           </div>
           <div className="hidden tablet:block relative w-full h-full">
             <Image
-              src="/images/home-page/d2c3e329ad42bf538b76d09ecaeb042e4f8c3e9c.jpg"
+              src="/images/AdobeStock_966050142.jpeg"
               alt="Woman enjoying the sauna"
               fill
               className="object-cover scale-x-[-1]"

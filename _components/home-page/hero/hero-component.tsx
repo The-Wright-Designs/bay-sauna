@@ -12,7 +12,7 @@ export default function HeroComponent() {
       <div>
         <HeroSlider
           data={heroSlider}
-          cssClasses="h-[450px] tablet:h-[600px] desktop:h-[660px]"
+          cssClasses="h-[550px] tablet:h-[600px] desktop:h-[660px]"
         />
       </div>
       <div className="flex flex-col gap-7 bg-light-blue px-7 py-10 desktop:px-10 desktop:py-15 desktop:gap-10">

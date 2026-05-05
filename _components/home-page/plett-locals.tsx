@@ -31,7 +31,7 @@ export default function PlettLocalsComponent() {
         </div>
       </div>
       <Image
-        src="/images/home-page/9ede78acb1157c03d603cbd955934528cb8261a3.jpg"
+        src="/images/BaySauna-01-LR.jpg"
         alt="Stu and Steph, founders of Bay Sauna"
         width={427}
         height={427}

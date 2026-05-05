@@ -25,7 +25,7 @@ export default function PlettAdvantageComponent() {
           </p>
         </div>
         <ButtonLink
-          href="#plett-locals"
+          href="#founders"
           ariaLabel="Meet our founders"
           colorLightBlue
           cssClasses="tablet:self-start"
@@ -34,7 +34,7 @@ export default function PlettAdvantageComponent() {
         </ButtonLink>
       </div>
       <Image
-        src="/images/home-page/7c195020acf04955813170de46aaa0a2a94f3888.jpg"
+        src="/images/BaySauna-03-LR.jpeg"
         alt="Bay Sauna on Central Beach, Plettenberg Bay"
         width={1280}
         height={800}

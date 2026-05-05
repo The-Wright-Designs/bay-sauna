@@ -19,17 +19,13 @@ export default function EventsComponent({ cssClasses }: Props) {
         Events:
       </p>
       <div className="flex flex-col gap-5 desktop:gap-7">
-        <div className="flex flex-col">
-          <p className="text-beige">R8000 (8 hour minimum)</p>
-          <br />
-          <p className="text-beige">
-            We will bring the sauna to you, set it up and one of our team will
-            remain with the sauna for your safety and comfort.
-          </p>
-        </div>
+        <p className="text-beige">
+          We will bring the sauna to you, set it up and one of our team will
+          remain with the sauna for your safety and comfort.
+        </p>
         <div className="flex flex-col gap-5 border-t border-white/25 pt-5 desktop:pt-7">
-          <p className="font-semibold text-beige">
-            For more information & bookings:
+          <p className="text-[18px] text-beige">
+            Please get in touch for more information, pricing & bookings:
           </p>
           <div className="flex flex-col gap-3">
             <p className="text-beige font-medium underline underline-offset-4">

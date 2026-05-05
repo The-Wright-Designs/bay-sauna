@@ -27,6 +27,15 @@ export default function PriceListComponent() {
                 </div>
               </div>
               <div className="flex flex-col gap-3 desktop:gap-0">
+                <p className="text-subheading text-beige uppercase">
+                  Private sessions
+                </p>
+                <div className="flex gap-5 py-3 border-b border-white/50">
+                  <p className="w-[180px] shrink-0 text-beige">30 min</p>
+                  <p className="text-beige">R650</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3 desktop:gap-0">
                 <p className="text-subheading text-beige uppercase">Packages</p>
                 <div className="flex flex-col">
                   <div className="flex gap-5 py-3 border-b border-white/50">
@@ -61,9 +70,9 @@ export default function PriceListComponent() {
           </ButtonLink>
         </div>
         <EventsComponent cssClasses="desktop:order-last" />
-        <div className="relative aspect-video rounded-md overflow-hidden desktop:aspect-auto desktop:h-full desktop:w-auto">
+        <div className="relative aspect-square rounded-md overflow-hidden desktop:aspect-auto desktop:h-full desktop:w-auto">
           <Image
-            src="/images/home-page/c9e5db2771a8d3b95bafb5b0ad982cc24a5d2601.jpg"
+            src="/images/BaySauna-15-LR.jpeg"
             alt="People enjoying Bay Sauna"
             fill
             className="object-cover rounded-none"

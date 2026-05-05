@@ -19,7 +19,7 @@ export default function SaunaEtiquetteComponent() {
         <EtiquetteSlider data={data.homePage.saunaEtiquette} />
         <div className="relative aspect-video w-full rounded-md overflow-hidden desktop:hidden">
           <Image
-            src="/images/home-page/e0a8a85b3cb1b0c0b63ba1b75afdf3dc5bc7a8f2.jpg"
+            src="/images/AdobeStock_131691008.jpeg"
             alt="Person relaxing in the sauna"
             fill
             className="object-cover rounded-none"

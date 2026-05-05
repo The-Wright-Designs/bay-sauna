@@ -13,7 +13,7 @@ const ReadyToJoin = ({ cssClasses }: Props) => {
         cssClasses,
       )}
     >
-      <div className="flex flex-col gap-10 tablet:items-start desktop:items-center desktop:gap-5">
+      <div className="flex flex-col gap-10 tablet:items-start desktop:items-center desktop:gap-2">
         <h2 className="text-light-blue desktop:text-center desktop:text-[40px]">
           Ready to join us?
         </h2>
@@ -24,7 +24,7 @@ const ReadyToJoin = ({ cssClasses }: Props) => {
         <ButtonLink
           href="/#contact"
           colorDarkBlue
-          cssClasses="w-full tablet:w-auto"
+          cssClasses="w-full tablet:w-auto desktop:mt-2"
         >
           Book Your Session
         </ButtonLink>
