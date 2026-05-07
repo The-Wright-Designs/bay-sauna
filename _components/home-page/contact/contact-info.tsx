@@ -12,7 +12,7 @@ const ContactInfo = () => {
             <ShowPhoneNumber blackText />
           </div>
           <Link
-            href="#"
+            href="https://wa.me/message/ELBFOQCT3XSEH1"
             aria-label="Get in touch on WhatsApp"
             target="_blank"
             className="desktop:hidden tablet:hover:opacity-80"
@@ -41,7 +41,7 @@ const ContactInfo = () => {
         </div>
       </div>
       <Link
-        href="#"
+        href="https://wa.me/message/ELBFOQCT3XSEH1"
         aria-label="Get in touch on WhatsApp"
         target="_blank"
         className="hidden desktop:block tablet:hover:opacity-80"

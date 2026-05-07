@@ -37,7 +37,7 @@ export default function EventsComponent({ cssClasses }: Props) {
                 <ShowEmailAddress />
               </div>
               <Link
-                href="#"
+                href="https://wa.me/message/ELBFOQCT3XSEH1"
                 aria-label="Get in touch on WhatsApp"
                 className="tablet:hover:opacity-80"
                 target="_blank"
