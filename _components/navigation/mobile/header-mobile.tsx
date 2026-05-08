@@ -6,7 +6,7 @@ import Link from "next/link";
 import classNames from "classnames";
 
 import navData from "@/_data/nav-data.json";
-import { Menu, X } from "lucide-react";
+import { X } from "lucide-react";
 
 interface MobileHeaderProps {
   cssClasses?: string;
@@ -62,7 +62,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
 
       <div
         className={classNames(
-          "fixed inset-0 z-50 transform bg-dark-blue/97 transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 transform bg-dark-blue/98 transition-transform duration-300 ease-in-out",
           {
             "translate-x-full": !isOpen,
           },
@@ -92,6 +92,15 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
                 </li>
               );
             })}
+            <li className="border-t border-white/25 pt-4">
+              <Link
+                href="/disclaimer"
+                onClick={() => setIsOpen(false)}
+                className="text-paragraph text-white font-light p-3 -m-3"
+              >
+                Health &amp; Liability Disclaimer
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

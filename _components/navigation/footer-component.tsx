@@ -24,6 +24,14 @@ const FooterComponent = () => {
                 </Link>
               </li>
             ))}
+            <li className="-mt-1">
+              <Link
+                href="/disclaimer"
+                className="text-[14px] text-black hover:text-light-blue"
+              >
+                Health &amp; Liability Disclaimer
+              </Link>
+            </li>
           </ul>
           <div className="flex flex-col gap-7 items-center desktop:items-end desktop:gap-5">
             <Link href="/" className="flex flex-col gap-3 items-center">
