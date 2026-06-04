@@ -25,11 +25,15 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
             </span>
           </h1>
         </Link>
-        <nav className="flex gap-3 items-end">
+        <nav className="flex gap-3 items-center -mb-2">
           {navData.map((item) => (
             <Link
               key={item.title}
-              className="text-black font-light tablet:hover:text-light-blue"
+              className={classNames(
+                item.title === "Book Your Session"
+                  ? "border-light-blue border-2 bg-light-blue font-normal text-white rounded-md py-1 px-2.5 tablet:hover:text-black tablet:hover:bg-beige"
+                  : "text-black font-light tablet:hover:text-light-blue",
+              )}
               href={item.url}
             >
               {item.title}

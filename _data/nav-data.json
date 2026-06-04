@@ -26,5 +26,9 @@
   {
     "title": "Contact",
     "url": "/#contact"
+  },
+  {
+    "title": "Book Your Session",
+    "url": "/plett"
   }
 ]

@@ -78,21 +78,29 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
           </button>
         </div>
         <nav className="px-5">
-          <ul className="grid gap-4">
+          <ul className="flex flex-col gap-4">
             {navData.map(({ title, url }, id) => {
               return (
-                <li key={id}>
+                <li
+                  key={id}
+                  className={title === "Book Your Session" ? "mt-2" : ""}
+                >
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-paragraph text-white font-light p-3 -m-3"
+                    className={classNames(
+                      "text-paragraph",
+                      title === "Book Your Session"
+                        ? "bg-beige text-black font-normal rounded-md py-2 px-3"
+                        : "text-white font-light p-3 -m-3",
+                    )}
                   >
                     {title}
                   </Link>
                 </li>
               );
             })}
-            <li className="border-t border-white/25 pt-4">
+            <li className="border-t border-white/25 pt-4 mt-3">
               <Link
                 href="/disclaimer"
                 onClick={() => setIsOpen(false)}
