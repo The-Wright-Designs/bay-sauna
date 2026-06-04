@@ -76,7 +76,7 @@ const ContactForm = () => {
                 type="text"
                 id="fullName"
                 name="name"
-                className="bg-white h-8 w-full rounded border border-black/25 px-3"
+                className="bg-white h-10 w-full rounded border border-black/25 px-3"
                 autoComplete="name"
                 required
               />
@@ -88,7 +88,7 @@ const ContactForm = () => {
                 type="tel"
                 id="phoneNumber"
                 name="phone"
-                className="bg-white h-8 w-full rounded border border-black/25 px-3"
+                className="bg-white h-10 w-full rounded border border-black/25 px-3"
                 autoComplete="tel"
               />
             </label>
@@ -99,7 +99,7 @@ const ContactForm = () => {
                 type="email"
                 id="emailAddress"
                 name="email"
-                className="bg-white h-8 w-full rounded border border-black/25 px-3"
+                className="bg-white h-10 w-full rounded border border-black/25 px-3"
                 autoComplete="email"
                 required
               />

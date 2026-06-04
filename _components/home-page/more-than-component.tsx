@@ -28,7 +28,7 @@ export default function MoreThanComponent() {
       </div>
       <Image
         src="/images/IMG_4733.jpeg"
-        alt="Bay Sauna on Central Beach in Plettenberg Bay, South Africa"
+        alt="Bay Sauna on in Plettenberg Bay, South Africa"
         width={1280}
         height={800}
         className="aspect-video object-cover desktop:col-start-2 desktop:row-span-2 desktop:aspect-[16/11] desktop:h-full desktop:w-auto"

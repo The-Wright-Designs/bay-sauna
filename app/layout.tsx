@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.baysauna.co.za"),
   title: "Bay Sauna | Plettenberg Bay",
   description:
-    "Wood-fired beach sauna on Central Beach, Plettenberg Bay. Move between deep heat and the Indian Ocean in one unforgettable ritual.",
+    "Wood-fired beach sauna in Plettenberg Bay. Move between deep heat and the Indian Ocean in one unforgettable ritual.",
   keywords:
-    "sauna, beach sauna, Plettenberg Bay, Plett, wood-fired sauna, outdoor sauna, cold plunge, Indian Ocean, Central Beach, wellness, heat therapy, Plettenberg Bay activities, sauna experience, bay sauna",
+    "sauna, beach sauna, Plettenberg Bay, Plett, wood-fired sauna, outdoor sauna, cold plunge, Indian Ocean, sanctuary beach, Central Beach, wellness, heat therapy, Plettenberg Bay activities, sauna experience, bay sauna",
   openGraph: {
     description:
-      "Wood-fired beach sauna on Central Beach, Plettenberg Bay. Move between deep heat and the Indian Ocean in one unforgettable ritual.",
+      "Wood-fired beach sauna in Plettenberg Bay. Move between deep heat and the Indian Ocean in one unforgettable ritual.",
     type: "website",
     locale: "en_ZA",
     siteName: "Bay Sauna",

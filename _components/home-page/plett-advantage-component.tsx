@@ -11,8 +11,8 @@ export default function PlettAdvantageComponent() {
         </h2>
         <div className="flex flex-col gap-4 leading-[1.25]">
           <p>
-            <strong>Set on Central Beach in Plettenberg Bay,</strong> our sauna
-            sits where the land meets the sea.
+            <strong>Set on the pristine beaches of Plettenberg Bay,</strong> our
+            sauna sits where the land meets the sea.
           </p>
           <div className="flex flex-col gap-1">
             <p>Watch sunrise over the bay.</p>
@@ -35,7 +35,7 @@ export default function PlettAdvantageComponent() {
       </div>
       <Image
         src="/images/BaySauna-03-LR.jpeg"
-        alt="Bay Sauna on Central Beach, Plettenberg Bay"
+        alt="Bay Sauna in Plettenberg Bay"
         width={1280}
         height={800}
         className="aspect-video object-cover desktop:h-full desktop:aspect-auto desktop:w-auto"
