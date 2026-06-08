@@ -71,6 +71,40 @@
         ]
       }
     ],
+    "locations": [
+      {
+        "heading": "Central Beach",
+        "image": "/images/home-page/hero-slider/bay-sauna-hero-image-1.jpg",
+        "paragraph": "Central Beach is the beating heart of Plettenberg Bay, and Bay Sauna sits right in the middle of the action. Warm up after a surf, cool off in the ocean, and enjoy the energy of Plett's most iconic beach.",
+        "button": "#",
+        "locationPage": {
+          "heading": "Bay Sauna Central Beach",
+          "subheading": "Wood-Fired Beach Sauna in Plettenberg Bay",
+          "paragraphs": [
+            "The Social Sauna",
+            "Coffee. Cocktails. Surfers. Swimmers. Volleyball. Sunsets.",
+            "Central Beach is the beating heart of Plettenberg Bay, and Bay Sauna sits right in the middle of the action. Warm up after a surf, cool off in the ocean, and enjoy the energy of Plett's most iconic beach.",
+            "Vibrant. Social. Unmistakably Plett."
+          ]
+        }
+      },
+      {
+        "heading": "Sanctuary Beach",
+        "image": "/images/home-page/hero-slider/bay-sauna-hero-image-2.jpg",
+        "paragraph": "Perched above the ocean, Sanctuary Beach feels a world away from everything else. Here, nature provides the entertainment and silence is part of the experience.",
+        "button": "#",
+        "locationPage": {
+          "heading": "Bay Sauna Sanctuary Beach",
+          "subheading": "Ocean View Sauna in Plettenberg Bay",
+          "paragraphs": [
+            "The Quiet Sauna",
+            "Crashing waves. Sea air. Coastal fynbos.",
+            "Perched above the ocean, Sanctuary Beach feels a world away from everything else. Here, nature provides the entertainment and silence is part of the experience.",
+            "Peaceful. Restorative. A true sanctuary."
+          ]
+        }
+      }
+    ],
     "saunaEtiquette": [
       {
         "heading": "Please shower at home before arriving",

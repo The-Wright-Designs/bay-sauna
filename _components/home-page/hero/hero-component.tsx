@@ -21,7 +21,7 @@ export default function HeroComponent() {
             <span className="text-paragraph text-white font-bold normal-case tablet:text-heading tablet:uppercase">
               Wood-fired beach sauna
             </span>{" "}
-            on pristine beaches of Plettenberg Bay.
+            on the pristine beaches of Plettenberg Bay.
           </h2>
           <h3 className="text-white text-paragraph desktop:text-left">
             Move between deep heat and the Indian Ocean in one unforgettable
