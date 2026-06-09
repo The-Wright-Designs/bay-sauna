@@ -9,6 +9,9 @@ interface EmailTemplateData {
   email: string;
   phone: string;
   message: string;
+  locationArea?: string;
+  locationHeading?: string;
+  franchise?: boolean;
 }
 
 interface MailOptions {
@@ -43,6 +46,9 @@ export async function sendEmail(
       const email = formData.get("email")?.toString() || "";
       const phone = formData.get("phone")?.toString() || "";
       const message = formData.get("message")?.toString() || "";
+      const locationArea = formData.get("locationArea")?.toString() || "";
+      const locationHeading = formData.get("locationHeading")?.toString() || "";
+      const franchise = formData.get("franchise") === "true";
 
       if (!name.trim() || !email.trim() || !message.trim()) {
         return {
@@ -56,6 +62,9 @@ export async function sendEmail(
         email,
         phone,
         message,
+        locationArea,
+        locationHeading,
+        franchise,
       } as EmailTemplateData);
 
       const transporter = nodemailer.createTransport({

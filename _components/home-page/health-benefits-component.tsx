@@ -34,11 +34,11 @@ export default function HealthBenefitsComponent() {
           <h2 className="hidden text-white desktop:block">Health Benefits</h2>
           <Accordion />
           <ButtonLink
-            href="/#contact"
-            ariaLabel="Book your session"
+            href="/locations/plettenberg-bay"
+            ariaLabel="View our locations"
             cssClasses="tablet:self-start"
           >
-            Book Your Session
+            View Our Locations
           </ButtonLink>
         </div>
       </div>

@@ -5,8 +5,14 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import Link from "next/link";
 import { sendEmail } from "@/_actions/send-email-actions";
 import ButtonType from "@/_components/ui/buttons/button-type";
+import classNames from "classnames";
 
-const ContactForm = () => {
+interface Props {
+  location?: { area: string; heading: string };
+  franchise?: boolean;
+}
+
+const ContactForm = ({ location, franchise }: Props) => {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -21,7 +27,12 @@ const ContactForm = () => {
   }, [submitted]);
 
   return (
-    <div className="flex flex-col gap-10 bg-light-blue -mx-7 px-7 py-10 tablet:-mx-10 tablet:px-10 desktop:px-7 desktop:mx-0 desktop:rounded-md">
+    <div
+      className={classNames(
+        "flex flex-col gap-10 bg-light-blue -mx-7 px-7 py-10 tablet:-mx-10 tablet:px-10 desktop:px-7 desktop:mx-0 desktop:rounded-md",
+        submitted && " min-h-[300px]",
+      )}
+    >
       {submitted ? (
         <p className="text-white text-subheading">
           Your email has been sent, we will be in touch soon.
@@ -69,6 +80,21 @@ const ContactForm = () => {
             }}
           >
             <input type="hidden" name="_honey" className="hidden" />
+            {location && (
+              <>
+                <input
+                  type="hidden"
+                  name="locationArea"
+                  value={location.area}
+                />
+                <input
+                  type="hidden"
+                  name="locationHeading"
+                  value={location.heading}
+                />
+              </>
+            )}
+            {franchise && <input type="hidden" name="franchise" value="true" />}
 
             <label htmlFor="fullName" className="flex flex-col gap-3">
               <span className="text-white">Name: *</span>

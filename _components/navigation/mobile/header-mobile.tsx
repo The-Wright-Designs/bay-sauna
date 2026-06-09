@@ -37,6 +37,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
             width={40}
             height={40}
             className="rounded-none"
+            priority
           />
           <h1 className="flex flex-col gap-[2px] text-[16px] text-dark-blue font-semibold tracking-[1.92px]">
             Bay Sauna
@@ -94,6 +95,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
                         ? "bg-beige text-black font-normal rounded-md py-2 px-3"
                         : "text-white font-light p-3 -m-3",
                     )}
+                    target={title === "Book Your Session" ? "_blank" : "_self"}
                   >
                     {title}
                   </Link>

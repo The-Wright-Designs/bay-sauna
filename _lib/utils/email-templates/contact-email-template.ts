@@ -3,6 +3,9 @@ interface EmailTemplateProps {
   email: string;
   phone?: string;
   message: string;
+  locationArea?: string;
+  locationHeading?: string;
+  franchise?: boolean;
 }
 
 export const contactEmailTemplate = ({
@@ -10,7 +13,15 @@ export const contactEmailTemplate = ({
   email,
   phone,
   message,
+  locationArea,
+  locationHeading,
+  franchise,
 }: EmailTemplateProps) => {
+  const enquiryType = franchise
+    ? "Franchise Opportunity"
+    : locationArea && locationHeading
+      ? `Location Enquiry — ${locationHeading} (${locationArea})`
+      : "General Enquiry";
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,6 +47,10 @@ export const contactEmailTemplate = ({
 
       <div class="content">
         <h2>Contact Form Submission</h2>
+        <div class="field">
+          <span class="label">Enquiry Type:</span>
+          <span class="value">${enquiryType}</span>
+        </div>
 
         <div class="field">
           <span class="label">Name:</span>

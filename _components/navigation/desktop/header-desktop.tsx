@@ -17,6 +17,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
             alt="Bay Sauna logo"
             width={52}
             height={52}
+            priority
           />
           <h1 className="flex flex-col gap-[2px] text-[20px] text-dark-blue font-semibold tracking-[2.4px]">
             Bay Sauna
@@ -35,6 +36,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
                   : "text-black font-light tablet:hover:text-light-blue",
               )}
               href={item.url}
+              target={item.title === "Book Your Session" ? "_blank" : "_self"}
             >
               {item.title}
             </Link>

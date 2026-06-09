@@ -62,11 +62,11 @@ export default function PriceListComponent() {
           </div>
           <ButtonLink
             href="/#contact"
-            ariaLabel="Book your session"
+            ariaLabel="Get in touch"
             colorBeige
             cssClasses="tablet:self-start"
           >
-            Book Your Session
+            Get In Touch
           </ButtonLink>
         </div>
         <EventsComponent cssClasses="desktop:order-last" />

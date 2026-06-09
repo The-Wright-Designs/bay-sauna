@@ -1,4 +1,4 @@
-import HeroSlider from "./hero-slider";
+import SliderComponent from "../slider-component";
 import ButtonLink from "@/_components/ui/buttons/button-link";
 import sliderData from "@/_data/general-data.json";
 
@@ -10,7 +10,7 @@ export default function HeroComponent() {
   return (
     <section className="max-w-[1280px] mx-auto desktop:grid grid-cols-[830px_1fr]">
       <div>
-        <HeroSlider
+        <SliderComponent
           data={heroSlider}
           cssClasses="h-[550px] tablet:h-[600px] desktop:h-[660px]"
         />
@@ -29,11 +29,12 @@ export default function HeroComponent() {
           </h3>
         </div>
         <ButtonLink
-          href="#contact"
+          href="https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/services?eid=5390692&share=true&pId=2995120"
           ariaLabel="Book your session"
           cssClasses="tablet:self-center desktop:self-start"
+          target="_blank"
         >
-          Book Your Session
+          Book Online
         </ButtonLink>
       </div>
     </section>

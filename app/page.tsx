@@ -1,5 +1,5 @@
 import HealthBenefitsComponent from "@/_components/home-page/health-benefits-component";
-import HeroComponent from "@/_components/home-page/hero/hero-component";
+import HeroComponent from "@/_components/home-page/hero-component";
 import HowItWorksComponent from "@/_components/home-page/how-it-works/how-it-works-component";
 import MoreThanComponent from "@/_components/home-page/more-than-component";
 import PlettAdvantageComponent from "@/_components/home-page/plett-advantage-component";
@@ -9,7 +9,7 @@ import PageWrapper from "@/_lib/utils/page-wrapper";
 import generalData from "@/_data/general-data.json";
 import PriceListComponent from "@/_components/home-page/price-list/price-list-component";
 import SaunaEtiquetteComponent from "@/_components/home-page/sauna-etiquette/sauna-etiquette-component";
-import ContactComponent from "@/_components/home-page/contact/contact-component";
+import ContactComponent from "@/_components/home-page/contact-component";
 
 const {
   homePage: { howItWorks },

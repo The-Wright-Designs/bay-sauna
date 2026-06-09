@@ -1,5 +1,5 @@
-import ContactForm from "@/_components/home-page/contact/contact-form";
-import ContactInfo from "@/_components/home-page/contact/contact-info";
+import ContactForm from "@/_components/contact-form";
+import ContactInfo from "@/_components/contact-info";
 import Image from "next/image";
 
 const ContactComponent = () => {

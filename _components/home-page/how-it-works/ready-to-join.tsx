@@ -22,9 +22,10 @@ const ReadyToJoin = ({ cssClasses }: Props) => {
           <strong>Sweat. Swim. Repeat.</strong>
         </p>
         <ButtonLink
-          href="/#contact"
+          href="https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/services?eid=5390692&share=true&pId=2995120"
           colorDarkBlue
           cssClasses="w-full tablet:w-auto desktop:mt-2"
+          target="_blank"
         >
           Book Your Session
         </ButtonLink>

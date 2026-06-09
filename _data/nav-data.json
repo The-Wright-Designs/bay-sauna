@@ -4,6 +4,10 @@
     "url": "/"
   },
   {
+    "title": "Our Locations",
+    "url": "/locations/plettenberg-bay"
+  },
+  {
     "title": "About",
     "url": "/#about"
   },
@@ -20,15 +24,11 @@
     "url": "/#pricing"
   },
   {
-    "title": "Founders",
-    "url": "/#founders"
-  },
-  {
     "title": "Contact",
     "url": "/#contact"
   },
   {
     "title": "Book Your Session",
-    "url": "/plett"
+    "url": "https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/services?eid=5390692&share=true&pId=2995120"
   }
 ]

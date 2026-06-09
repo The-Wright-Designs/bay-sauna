@@ -13,7 +13,7 @@ interface Props {
   data: string[];
 }
 
-const HeroSlider = ({ cssClasses, data }: Props) => {
+const SliderComponent = ({ cssClasses, data }: Props) => {
   return (
     <Swiper
       autoplay={{
@@ -48,4 +48,4 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
   );
 };
 
-export default HeroSlider;
+export default SliderComponent;
