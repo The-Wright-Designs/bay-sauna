@@ -8,10 +8,6 @@
     "url": "/locations/plettenberg-bay"
   },
   {
-    "title": "About",
-    "url": "/#about"
-  },
-  {
     "title": "Health Benefits",
     "url": "/#health-benefits"
   },
@@ -22,6 +18,10 @@
   {
     "title": "Pricing",
     "url": "/#pricing"
+  },
+  {
+    "title": "Franchise",
+    "url": "/franchise"
   },
   {
     "title": "Contact",
