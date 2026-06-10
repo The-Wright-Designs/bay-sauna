@@ -144,37 +144,39 @@ const ContactForm = ({ location, franchise }: Props) => {
             {error && <p className="text-[14px] text-red-500">{error}</p>}
 
             <div className="flex flex-col gap-4 mt-5">
-              <label
-                htmlFor="disclaimer"
-                className="flex items-center gap-3 desktop:hover:cursor-pointer"
-              >
-                <input
-                  type="checkbox"
-                  id="disclaimer"
-                  checked={disclaimerAccepted}
-                  onChange={(e) => setDisclaimerAccepted(e.target.checked)}
-                  className="w-5 h-5 tablet:hover:cursor-pointer"
-                />
-                <span className="text-[14px] text-white">
-                  I have read and agree to the{" "}
-                  <Link
-                    href="/disclaimer"
-                    className="underline text-white underline-offset-4 font-medium tablet:hover:opacity-90"
-                    target="_blank"
-                  >
-                    Health &amp; Liability Disclaimer
-                  </Link>
-                </span>
-              </label>
+              {!franchise && (
+                <label
+                  htmlFor="disclaimer"
+                  className="flex items-center gap-3 desktop:hover:cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    id="disclaimer"
+                    checked={disclaimerAccepted}
+                    onChange={(e) => setDisclaimerAccepted(e.target.checked)}
+                    className="w-5 h-5 tablet:hover:cursor-pointer"
+                  />
+                  <span className="text-[14px] text-white">
+                    I have read and agree to the{" "}
+                    <Link
+                      href="/disclaimer"
+                      className="underline text-white underline-offset-4 font-medium tablet:hover:opacity-90"
+                      target="_blank"
+                    >
+                      Health &amp; Liability Disclaimer
+                    </Link>
+                  </span>
+                </label>
+              )}
               <ButtonType
                 type="submit"
                 colorDarkBlue
-                disabled={isSubmitting || !disclaimerAccepted}
+                disabled={isSubmitting || (!franchise && !disclaimerAccepted)}
                 cssClasses="w-full tablet:w-auto tablet:self-start"
                 title={
                   isSubmitting
                     ? "Submitting your message..."
-                    : !disclaimerAccepted
+                    : !franchise && !disclaimerAccepted
                       ? "Please agree to the Health & Liability Disclaimer to submit"
                       : undefined
                 }

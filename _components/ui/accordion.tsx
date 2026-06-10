@@ -7,7 +7,16 @@ import data from "@/_data/general-data.json";
 
 const { healthBenefits } = data.homePage;
 
-const Accordion = () => {
+interface AccordionItem {
+  title: string;
+  paragraphs: string[];
+}
+
+interface AccordionProps {
+  items?: AccordionItem[];
+}
+
+const Accordion = ({ items = healthBenefits }: AccordionProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
@@ -16,7 +25,7 @@ const Accordion = () => {
 
   return (
     <div className="w-full flex flex-col">
-      {healthBenefits.map((item, index) => {
+      {items.map((item, index) => {
         const isOpen = openIndex === index;
         return (
           <div key={index} className="border-b border-white/50">
@@ -42,12 +51,25 @@ const Accordion = () => {
                 { "grid-rows-[1fr] pb-5": isOpen, "grid-rows-[0fr]": !isOpen },
               )}
             >
-              <div className="overflow-hidden flex flex-col gap-3">
-                {item.paragraphs.map((para, i) => (
-                  <p key={i} className="text-white">
-                    {para}
-                  </p>
-                ))}
+              <div className="overflow-hidden flex flex-col gap-5">
+                {item.paragraphs.map((para, i) => {
+                  const isBold = /^\*(.+)\*$/.test(para);
+                  const isList = /^\^(.+)\^$/.test(para);
+                  const text = para
+                    .replace(/^\*(.+)\*$/, "$1")
+                    .replace(/^\^(.+)\^$/, "$1");
+                  return (
+                    <p
+                      key={i}
+                      className={classNames("text-white", {
+                        "font-bold": isBold,
+                        "before:content-['•'] -mt-4 before:mr-2 pl-4": isList,
+                      })}
+                    >
+                      {text}
+                    </p>
+                  );
+                })}
               </div>
             </div>
           </div>

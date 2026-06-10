@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Accordion from "@/_components/ui/accordian";
+import Accordion from "@/_components/ui/accordion";
 import ButtonLink from "@/_components/ui/buttons/button-link";
 
 export default function HealthBenefitsComponent() {

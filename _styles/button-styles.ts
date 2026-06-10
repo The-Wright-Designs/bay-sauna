@@ -12,7 +12,7 @@ export const buttonStyles = (
   const isDefault = !colorDarkBlue && !colorLightBlue && !colorBeige;
 
   return classNames(
-    "flex text-subheading text-center px-10 py-3.5 justify-center items-center gap-2 ease-in-out duration-300 rounded-md desktop:hover:cursor-pointer",
+    "flex text-subheading text-center px-10 py-3.5 justify-center items-center gap-2 ease-in-out duration-300 rounded-md",
     cssClasses,
     {
       "opacity-50 cursor-not-allowed": pending || disabled,
@@ -20,8 +20,8 @@ export const buttonStyles = (
       "bg-light-blue text-white": colorLightBlue,
       "bg-beige text-black": colorBeige,
       "bg-white text-black": isDefault,
-      "tablet:hover:opacity-90":
-        (colorDarkBlue || colorLightBlue || colorBeige || isDefault) && active,
+      "tablet:hover:opacity-90 desktop:hover:cursor-pointer":
+        (colorDarkBlue || colorLightBlue || colorBeige || isDefault) && !active,
     },
   );
 };
