@@ -45,6 +45,7 @@ const HeroComponent = ({ location, buttonLink, cssClasses }: Props) => {
             href={buttonLink}
             colorDarkBlue
             cssClasses="w-full justify-center"
+            target="_blank"
           >
             Book Online
           </ButtonLink>
