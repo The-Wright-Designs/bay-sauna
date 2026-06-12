@@ -34,7 +34,7 @@ export default function PlettAdvantageComponent() {
         </ButtonLink>
       </div>
       <Image
-        src="/images/BaySauna-03-LR.jpeg"
+        src="/images/home-page/67489b87bc84e5fef24274257e21c962bc496642.jpg"
         alt="Bay Sauna in Plettenberg Bay"
         width={1280}
         height={800}

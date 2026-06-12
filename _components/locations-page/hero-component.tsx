@@ -9,11 +9,11 @@ export default function HeroComponent({ displayName }: Props) {
     <section className="max-w-[1280px] mx-auto overflow-hidden min-[1000px]:h-[475px] min-[1000px]:grid grid-cols-2 desktop:grid-cols-[830px_1fr] desktop:h-[570px]">
       <div className="relative aspect-[4/3] min-[1000px]:aspect-auto">
         <Image
-          src="/images/locations/plett/WZ5H7857-Edit.jpg"
+          src="/images/locations/plett/1e4ada32f6862bb92279600195ba003f8a4ae65e.jpg"
           alt={displayName}
           fill
           className="rounded-none object-cover"
-          sizes="(max-width: 1280px) 50vw, 900px"
+          sizes="(max-width: 1280px) 100vw, 900px"
         />
       </div>
       <div className="flex flex-col gap-7 px-7 py-10 min-[1000px]:bg-dark-blue min-[1000px]:px-10 min-[1000px]:py-15 min-[1000px]:gap-10">

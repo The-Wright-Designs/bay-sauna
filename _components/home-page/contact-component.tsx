@@ -15,8 +15,8 @@ const ContactComponent = () => {
       </div>
       <div className="hidden relative h-full w-full desktop:block">
         <Image
-          src="/images/BaySauna-11-LR.jpg"
-          alt="Bay Sauna"
+          src="/images/home-page/5d8db91ad02e8593e51ce0ce9458f06e5a196bf3.jpg"
+          alt="Bay Sauna in Plettenberg Bay"
           fill
           className="object-cover"
           sizes="900px"

@@ -5,11 +5,10 @@
   },
   "homePage": {
     "heroSlider": [
-      "/images/home-page/hero-slider/bay-sauna-hero-image-5.jpg",
-      "/images/home-page/hero-slider/bay-sauna-hero-image-4.jpg",
-      "/images/home-page/hero-slider/bay-sauna-hero-image-6.jpg",
       "/images/home-page/hero-slider/bay-sauna-hero-image-2.jpg",
       "/images/home-page/hero-slider/bay-sauna-hero-image-3.jpg",
+      "/images/home-page/hero-slider/bay-sauna-hero-image-5.jpg",
+      "/images/home-page/hero-slider/bay-sauna-hero-image-4.jpg",
       "/images/home-page/hero-slider/bay-sauna-hero-image-1.jpg"
     ],
     "howItWorks": [
@@ -122,7 +121,7 @@
       "beaches": [
         {
           "heading": "Central Beach",
-          "image": "/images/locations/plett/central-beach/IMG_4733.jpeg",
+          "image": "/images/locations/plett/central-beach/ede2c27d46735fa2f179109c8c84262308a994bf.jpg",
           "paragraph": "Central Beach is the beating heart of Plettenberg Bay, and Bay Sauna sits right in the middle of the action. Warm up after a surf, cool off in the ocean, and enjoy the energy of Plett's most iconic beach.",
           "locationPage": {
             "heading": "Bay Sauna Central Beach",
@@ -134,8 +133,8 @@
               "Vibrant. Social. Unmistakably Plett."
             ],
             "heroSlider": [
-              "/images/locations/plett/central-beach/IMG_4650.jpeg",
-              "/images/locations/plett/central-beach/IMG_4674.jpeg",
+              "/images/locations/plett/central-beach/ede2c27d46735fa2f179109c8c84262308a994bf.jpg",
+              "/images/locations/plett/central-beach/BaySauna-08-LR.jpg",
               "/images/locations/plett/central-beach/IMG_4733.jpeg"
             ],
             "button": "https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/all-offer?id=3095028&share=true&pId=2995120",
@@ -145,12 +144,12 @@
               "sunNote": "*Open on Sundays from 1 Dec-15 Jan (7-11am & 4-7pm)",
               "publicHolidays": "7am – 11am"
             },
-            "contactImage": "/images/locations/pexels-huum-sauna-heaters-718199222-31092914.jpg"
+            "contactImage": "/images/locations/plett/central-beach/1758e5d077b2e0630b0843b44c8f8686f57e4e23.jpg"
           }
         },
         {
           "heading": "Sanctuary Beach",
-          "image": "/images/locations/plett/sanctuary-beach/IMG_8174.jpeg",
+          "image": "/images/locations/plett/sanctuary-beach/cb5f4e01cdd05079d615c9fc575dfb8b62a8e525.jpg",
           "paragraph": "Perched above the ocean, Sanctuary Beach feels a world away from everything else. Here, nature provides the entertainment and silence is part of the experience.",
           "locationPage": {
             "heading": "Bay Sauna Sanctuary Beach",
@@ -162,8 +161,8 @@
               "Peaceful. Restorative. A true sanctuary."
             ],
             "heroSlider": [
-              "/images/locations/plett/sanctuary-beach/IMG_8174.jpeg",
-              "/images/locations/plett/sanctuary-beach/IMG_8432.jpeg",
+              "/images/locations/plett/sanctuary-beach/e259db81e73dc3f05c847d3197124d23d9c9ca7d.jpg",
+              "/images/locations/plett/sanctuary-beach/cb5f4e01cdd05079d615c9fc575dfb8b62a8e525.jpg",
               "/images/locations/plett/sanctuary-beach/Sanctuary-1.jpeg"
             ],
             "button": "https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/all-offer?id=3095028&share=true&pId=2995120",
@@ -173,7 +172,7 @@
               "sunNote": "*Open on Sundays from 1 Dec-15 Jan (7-11am & 4-7pm)",
               "publicHolidays": "7am – 11am"
             },
-            "contactImage": "/images/locations/pexels-huum-sauna-heaters-718199222-31092914.jpg"
+            "contactImage": "/images/locations/plett/sanctuary-beach/BaySauna-52-LR.jpg"
           }
         }
       ]

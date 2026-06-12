@@ -8,12 +8,12 @@ export default function HealthBenefitsComponent() {
       className="bg-light-blue scroll-mt-16 desktop:scroll-mt-20"
       id="health-benefits"
     >
-      <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-[1fr_320px] desktop:h-[1292px] min-[1360px]:px-0">
+      <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-[1fr_320px] desktop:h-[1308px] min-[1360px]:px-0">
         <h2 className="text-white desktop:hidden">Health Benefits</h2>
         <div className="flex flex-col gap-10 tablet:flex-row desktop:flex-col">
           <div className="relative aspect-video w-full desktop:aspect-auto desktop:h-full">
             <Image
-              src="/images/AdobeStock_313785803.jpeg"
+              src="/images/home-page/6106768b0b690e198e14543903f3cc3f04f9f920.jpg"
               alt="People enjoying the sauna"
               fill
               className="object-cover"
@@ -22,10 +22,10 @@ export default function HealthBenefitsComponent() {
           </div>
           <div className="hidden tablet:block relative w-full h-full">
             <Image
-              src="/images/AdobeStock_966050142.jpeg"
+              src="/images/home-page/fa31d81853ab4b8fa501f444dd44a7a1212c72b5.jpg"
               alt="Woman enjoying the sauna"
               fill
-              className="object-cover scale-x-[-1]"
+              className="object-cover"
               sizes="850px"
             />
           </div>

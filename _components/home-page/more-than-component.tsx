@@ -27,11 +27,11 @@ export default function MoreThanComponent() {
         </div>
       </div>
       <Image
-        src="/images/IMG_4733.jpeg"
+        src="/images/home-page/e259db81e73dc3f05c847d3197124d23d9c9ca7d.jpg"
         alt="Bay Sauna on in Plettenberg Bay, South Africa"
         width={1280}
         height={800}
-        className="aspect-video object-cover desktop:col-start-2 desktop:row-span-2 desktop:aspect-[16/11] desktop:h-full desktop:w-auto"
+        className="aspect-square object-cover object-bottom desktop:object-center desktop:col-start-2 desktop:row-span-2 desktop:aspect-[16/11] desktop:h-full desktop:w-auto"
         sizes="(max-width: 1279px), 100vw, 620px"
       />
       <div className="flex flex-col gap-10">

@@ -59,7 +59,7 @@ const ExpressInterestComponent = () => {
       </section>
       <div className="relative aspect-square tablet:aspect-auto tablet:h-full desktop:hidden">
         <Image
-          src="/images/BaySauna-01-LR.jpg"
+          src="/images/franchise-page/cef1b559516de1409407ac0b6365d16d35425e8e.jpg"
           alt="Bay Sauna - Express your interest"
           fill
           className="object-cover"

@@ -37,7 +37,7 @@ const WeBelieveComponent = () => {
       </main>
       <div className="relative aspect-square tablet:aspect-auto tablet:h-full desktop:hidden">
         <Image
-          src="/images/franchise-page/8039837e8cdf33a7d5c1e9de1b9e4dd433de84c8.jpg"
+          src="/images/franchise-page/e294c2415d944b95b2a48f5065b07c6291fc5442.jpg"
           alt="Bay Sauna - Franchise opportunities"
           fill
           className="object-cover"

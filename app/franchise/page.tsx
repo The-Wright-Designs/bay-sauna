@@ -16,7 +16,7 @@ const FranchisePage = () => {
         <div className="hidden desktop:grid gap-10">
           <div className="relative">
             <Image
-              src="/images/franchise-page/8039837e8cdf33a7d5c1e9de1b9e4dd433de84c8.jpg"
+              src="/images/franchise-page/e294c2415d944b95b2a48f5065b07c6291fc5442.jpg"
               alt="Bay Sauna - Franchise opportunities"
               fill
               className="object-cover"
@@ -25,7 +25,7 @@ const FranchisePage = () => {
           </div>
           <div className="relative">
             <Image
-              src="/images/BaySauna-01-LR.jpg"
+              src="/images/franchise-page/cef1b559516de1409407ac0b6365d16d35425e8e.jpg"
               alt="Bay Sauna - Express your interest"
               fill
               className="object-cover"
@@ -47,7 +47,7 @@ const FranchisePage = () => {
           <ContactForm franchise />
           <div className="hidden desktop:block relative w-full h-full">
             <Image
-              src="/images/franchise-page/c054ca407b395284ac769df3c63b3d53c680fb99.jpg"
+              src="/images/franchise-page/7bb1ff4a2b3abfcfd70f706a2fba067cbd5cdf44.jpg"
               alt="Bay Sauna - Franchise opportunities"
               fill
               className="object-cover"

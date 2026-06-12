@@ -34,11 +34,11 @@ export default function HowItWorksComponent({ steps }: Props) {
       <div className="flex flex-col gap-10 relative">
         <div className="relative h-full">
           <Image
-            src="/images/BaySauna-08-LR.jpg"
+            src="/images/home-page/0be6d87fb6d43cabda4afa6fff26d786edb6b0ec.jpg"
             alt="People relaxing inside Bay Sauna"
             width={1280}
             height={1000}
-            className="aspect-video object-cover w-full desktop:rounded-none desktop:aspect-auto desktop:h-full"
+            className="aspect-square object-cover w-full tablet:aspect-video desktop:rounded-none desktop:object-top desktop:h-full"
             sizes="(max-width:1279px) 100vw, 1280px"
           />
           <div

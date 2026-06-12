@@ -8,7 +8,7 @@ export default function PriceListComponent() {
       className="bg-black scroll-mt-16 desktop:scroll-mt-20"
       id="pricing"
     >
-      <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-3 min-[1360px]:px-0">
+      <div className="max-w-[1280px] mx-auto grid gap-10 py-15 px-7 tablet:px-10 desktop:grid-cols-[350px_1fr_350px] min-[1360px]:px-0">
         <div className="flex flex-col gap-10 desktop:gap-7">
           <div className="flex flex-col gap-10">
             <h2 className="text-beige">Price List:</h2>
@@ -72,11 +72,11 @@ export default function PriceListComponent() {
         <EventsComponent cssClasses="desktop:order-last" />
         <div className="relative aspect-square rounded-md overflow-hidden desktop:aspect-auto desktop:h-full desktop:w-auto">
           <Image
-            src="/images/BaySauna-15-LR.jpeg"
+            src="/images/home-page/58fafb078701d34e006fe5fe6215ba71cbad16c1.jpg"
             alt="People enjoying Bay Sauna"
             fill
             className="object-cover rounded-none"
-            sizes="(max-width: 1279px) 100vw, 800px"
+            sizes="(max-width: 1279px) 100vw, 900px"
           />
         </div>
       </div>

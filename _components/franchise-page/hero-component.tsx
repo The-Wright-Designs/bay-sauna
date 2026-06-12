@@ -5,7 +5,7 @@ const HeroComponent = () => {
     <div className="max-w-[1280px] mx-auto tablet:grid tablet:grid-cols-2 desktop:grid-cols-[830px_1fr]">
       <div className="relative h-[500px] min-[600px]:h-[600px] tablet:h-auto">
         <Image
-          src="/images/BaySauna-11-LR.jpg"
+          src="/images/franchise-page/BaySauna-11-LR.jpg"
           alt="Bay Sauna franchise opportunity"
           fill
           className="object-cover rounded-none tablet:block"
