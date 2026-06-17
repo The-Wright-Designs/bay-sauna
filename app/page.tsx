@@ -1,5 +1,5 @@
 import HealthBenefitsComponent from "@/_components/home-page/health-benefits-component";
-import HeroComponent from "@/_components/home-page/hero-component";
+import HeroComponent from "@/_components/home-page/hero/hero-component";
 import HowItWorksComponent from "@/_components/home-page/how-it-works/how-it-works-component";
 import MoreThanComponent from "@/_components/home-page/more-than-component";
 import PlettAdvantageComponent from "@/_components/home-page/plett-advantage-component";

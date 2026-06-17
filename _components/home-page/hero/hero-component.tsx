@@ -1,20 +1,10 @@
-import SliderComponent from "../slider-component";
 import ButtonLink from "@/_components/ui/buttons/button-link";
-import sliderData from "@/_data/general-data.json";
-
-const {
-  homePage: { heroSlider },
-} = sliderData;
+import VideoComponent from "./video-component";
 
 export default function HeroComponent() {
   return (
     <section className="max-w-[1280px] mx-auto desktop:grid grid-cols-[830px_1fr]">
-      <div>
-        <SliderComponent
-          data={heroSlider}
-          cssClasses="h-[550px] tablet:h-[600px] desktop:h-[660px]"
-        />
-      </div>
+      <VideoComponent />
       <div className="flex flex-col gap-7 bg-light-blue px-7 py-10 desktop:px-10 desktop:py-15 desktop:gap-10">
         <div className="flex flex-col gap-4 text-center desktop:gap-7">
           <h2 className="text-white text-paragraph normal-case tablet:text-heading tablet:uppercase tablet:font-normal desktop:text-left">
