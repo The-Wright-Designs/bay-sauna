@@ -19,7 +19,7 @@ export default function HeroComponent() {
           </h3>
         </div>
         <ButtonLink
-          href="https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/services?eid=5390692&share=true&pId=2995120"
+          href="https://www.fresha.com/book-now/bay-sauna-co-y3zc73oz/all-offer?share=true&pId=2995120"
           ariaLabel="Book your session"
           cssClasses="tablet:self-center desktop:self-start"
           target="_blank"
