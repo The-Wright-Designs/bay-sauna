@@ -1,11 +1,17 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeOff } from "lucide-react";
 
 export default function VideoComponent() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
+
+  useEffect(() => {
+    if (!videoRef.current) return;
+    videoRef.current.muted = true;
+    videoRef.current.play().catch(() => {});
+  }, []);
 
   const toggleMute = () => {
     if (!videoRef.current) return;
@@ -22,30 +28,11 @@ export default function VideoComponent() {
         muted
         loop
         playsInline
+        preload="auto"
         poster="/open-graph-image.webp"
       >
-        <source
-          src="/videos/desktop.webm"
-          type="video/webm"
-          media="(min-width: 1280px)"
-        />
-        <source
-          src="/videos/desktop.mp4"
-          type="video/mp4"
-          media="(min-width: 1280px)"
-        />
-        <source
-          src="/videos/tablet.webm"
-          type="video/webm"
-          media="(min-width: 800px)"
-        />
-        <source
-          src="/videos/tablet.mp4"
-          type="video/mp4"
-          media="(min-width: 800px)"
-        />
-        <source src="/videos/phone.webm" type="video/webm" />
-        <source src="/videos/phone.mp4" type="video/mp4" />
+        <source src="/videos/desktop.mp4" type="video/mp4" />
+        <source src="/videos/desktop.webm" type="video/webm" />
       </video>
       <button
         onClick={toggleMute}
