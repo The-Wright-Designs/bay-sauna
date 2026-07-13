@@ -29,15 +29,23 @@ export default function VideoComponent() {
           type="video/webm"
           media="(min-width: 1280px)"
         />
-        <source src="/videos/desktop.mp4" media="(min-width: 1280px)" />
+        <source
+          src="/videos/desktop.mp4"
+          type="video/mp4"
+          media="(min-width: 1280px)"
+        />
         <source
           src="/videos/tablet.webm"
           type="video/webm"
           media="(min-width: 800px)"
         />
-        <source src="/videos/tablet.mp4" media="(min-width: 800px)" />
+        <source
+          src="/videos/tablet.mp4"
+          type="video/mp4"
+          media="(min-width: 800px)"
+        />
         <source src="/videos/phone.webm" type="video/webm" />
-        <source src="/videos/phone.mp4" />
+        <source src="/videos/phone.mp4" type="video/mp4" />
       </video>
       <button
         onClick={toggleMute}
