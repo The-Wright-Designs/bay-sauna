@@ -31,8 +31,8 @@ export default function VideoComponent() {
         preload="auto"
         poster="/open-graph-image.webp"
       >
-        <source src="/videos/desktop.mp4" type="video/mp4" />
-        <source src="/videos/desktop.webm" type="video/webm" />
+        <source src="/videos/hero-video.mp4" type="video/mp4" />
+        <source src="/videos/hero-video.webm" type="video/webm" />
       </video>
       <button
         onClick={toggleMute}
