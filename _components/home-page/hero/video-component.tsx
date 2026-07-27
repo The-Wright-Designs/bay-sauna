@@ -28,11 +28,11 @@ export default function VideoComponent() {
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         poster="/open-graph-image.webp"
       >
-        <source src="/videos/hero-video.mp4" type="video/mp4" />
         <source src="/videos/hero-video.webm" type="video/webm" />
+        <source src="/videos/hero-video.mp4" type="video/mp4" />
       </video>
       <button
         onClick={toggleMute}
