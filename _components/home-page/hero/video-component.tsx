@@ -8,9 +8,21 @@ export default function VideoComponent() {
   const [muted, setMuted] = useState(true);
 
   useEffect(() => {
-    if (!videoRef.current) return;
-    videoRef.current.muted = true;
-    videoRef.current.play().catch(() => {});
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.muted = true;
+
+    const attemptPlay = () => video.play().catch(() => {});
+
+    attemptPlay();
+    video.addEventListener("loadeddata", attemptPlay);
+    video.addEventListener("canplay", attemptPlay);
+
+    return () => {
+      video.removeEventListener("loadeddata", attemptPlay);
+      video.removeEventListener("canplay", attemptPlay);
+    };
   }, []);
 
   const toggleMute = () => {
@@ -28,11 +40,14 @@ export default function VideoComponent() {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
         poster="/open-graph-image.webp"
       >
+        <source
+          src="/videos/hero-video.mp4"
+          type='video/mp4; codecs="avc1.4D401F, mp4a.40.2"'
+        />
         <source src="/videos/hero-video.webm" type="video/webm" />
-        <source src="/videos/hero-video.mp4" type="video/mp4" />
       </video>
       <button
         onClick={toggleMute}
