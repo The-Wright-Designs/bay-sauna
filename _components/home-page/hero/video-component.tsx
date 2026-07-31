@@ -11,24 +11,37 @@ export default function VideoComponent() {
     const video = videoRef.current;
     if (!video) return;
 
+    video.setAttribute("muted", "");
     video.muted = true;
 
     const attemptPlay = () => video.play().catch(() => {});
 
+    const playOnInteraction = () => {
+      attemptPlay();
+      document.removeEventListener("touchstart", playOnInteraction);
+      document.removeEventListener("click", playOnInteraction);
+    };
+
     attemptPlay();
     video.addEventListener("loadeddata", attemptPlay);
     video.addEventListener("canplay", attemptPlay);
+    document.addEventListener("touchstart", playOnInteraction);
+    document.addEventListener("click", playOnInteraction);
 
     return () => {
       video.removeEventListener("loadeddata", attemptPlay);
       video.removeEventListener("canplay", attemptPlay);
+      document.removeEventListener("touchstart", playOnInteraction);
+      document.removeEventListener("click", playOnInteraction);
     };
   }, []);
 
   const toggleMute = () => {
-    if (!videoRef.current) return;
-    videoRef.current.muted = !videoRef.current.muted;
-    setMuted(videoRef.current.muted);
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = !video.muted;
+    setMuted(video.muted);
+    if (video.paused) video.play().catch(() => {});
   };
 
   return (
@@ -41,7 +54,7 @@ export default function VideoComponent() {
         loop
         playsInline
         preload="auto"
-        poster="/open-graph-image.webp"
+        poster="/images/home-page/hero-slider/bay-sauna-hero-image-1.jpg"
       >
         <source
           src="/videos/hero-video.mp4"
