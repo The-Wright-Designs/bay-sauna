@@ -1,3 +1,7 @@
+import { Suspense } from "react";
+
+import BayConditionsComponent from "@/_components/home-page/beach-conditions/bay-conditions-component";
+import BayConditionsSkeleton from "@/_components/home-page/beach-conditions/bay-conditions-skeleton";
 import HealthBenefitsComponent from "@/_components/home-page/health-benefits-component";
 import HeroComponent from "@/_components/home-page/hero/hero-component";
 import HowItWorksComponent from "@/_components/home-page/how-it-works/how-it-works-component";
@@ -18,6 +22,11 @@ const {
 export default function HomePage() {
   return (
     <div>
+      <PageWrapper cssClasses="desktop:hidden">
+        <Suspense fallback={<BayConditionsSkeleton />}>
+          <BayConditionsComponent />
+        </Suspense>
+      </PageWrapper>
       <HeroComponent />
       <PageWrapper cssClasses="flex flex-col gap-15 pb-15">
         <MoreThanComponent />

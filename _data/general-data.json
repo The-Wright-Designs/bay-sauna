@@ -122,6 +122,7 @@
         {
           "heading": "Central Beach",
           "image": "/images/locations/plett/central-beach/ede2c27d46735fa2f179109c8c84262308a994bf.jpg",
+          "coordinates": { "latitude": -34.0527, "longitude": 23.3716 },
           "paragraph": "Central Beach is the beating heart of Plettenberg Bay, and Bay Sauna sits right in the middle of the action. Warm up after a surf, cool off in the ocean, and enjoy the energy of Plett's most iconic beach.",
           "locationPage": {
             "heading": "Bay Sauna Central Beach",
@@ -150,6 +151,7 @@
         {
           "heading": "Sanctuary Beach",
           "image": "/images/locations/plett/sanctuary-beach/cb5f4e01cdd05079d615c9fc575dfb8b62a8e525.jpg",
+          "coordinates": { "latitude": -34.0527, "longitude": 23.3716 },
           "paragraph": "Perched above the ocean, Sanctuary Beach feels a world away from everything else. Here, nature provides the entertainment and silence is part of the experience.",
           "locationPage": {
             "heading": "Bay Sauna Sanctuary Beach",

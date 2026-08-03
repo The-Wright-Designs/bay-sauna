@@ -1,10 +1,20 @@
 import ButtonLink from "@/_components/ui/buttons/button-link";
 import VideoComponent from "./video-component";
+import BayConditionsComponent from "@/_components/home-page/beach-conditions/bay-conditions-component";
+import BayConditionsSkeleton from "@/_components/home-page/beach-conditions/bay-conditions-skeleton";
+import { Suspense } from "react";
 
 export default function HeroComponent() {
   return (
     <section className="max-w-[1280px] mx-auto tablet:grid grid-cols-2 desktop:grid-cols-[830px_1fr]">
-      <VideoComponent />
+      <div className="relative">
+        <div className="hidden desktop:block absolute inset-0 w-full z-10">
+          <Suspense fallback={<BayConditionsSkeleton />}>
+            <BayConditionsSkeleton />
+          </Suspense>
+        </div>
+        <VideoComponent />
+      </div>
       <div className="flex flex-col gap-7 bg-light-blue px-7 py-10 desktop:px-10 desktop:py-15 desktop:gap-10">
         <div className="flex flex-col gap-4 text-center desktop:gap-7">
           <h2 className="text-white text-paragraph normal-case tablet:text-[40px] tablet:uppercase tablet:font-normal min-[1000px]:text-heading desktop:text-left">

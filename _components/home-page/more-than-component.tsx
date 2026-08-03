@@ -31,6 +31,7 @@ export default function MoreThanComponent() {
         alt="Bay Sauna on in Plettenberg Bay, South Africa"
         width={1280}
         height={800}
+        priority
         className="aspect-square object-cover object-bottom desktop:object-center desktop:col-start-2 desktop:row-span-2 desktop:aspect-[16/11] desktop:h-full desktop:w-auto"
         sizes="(max-width: 1279px), 100vw, 620px"
       />
