@@ -10,7 +10,7 @@ export default function HeroComponent() {
       <div className="relative">
         <div className="hidden desktop:block absolute inset-0 w-full z-10">
           <Suspense fallback={<BayConditionsSkeleton />}>
-            <BayConditionsSkeleton />
+            <BayConditionsComponent />
           </Suspense>
         </div>
         <VideoComponent />
