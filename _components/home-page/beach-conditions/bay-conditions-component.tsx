@@ -24,21 +24,6 @@ const BeachConditionsComponent = async ({ cssClasses }: Props) => {
       value: `${airTemp}°C`,
       icon: <Thermometer color={BLACK} size={16} />,
     },
-    {
-      label: "Wind",
-      value: `${windSpeed} km/h ${windDirection}`,
-      icon: <Wind color={BLACK} size={16} />,
-    },
-    {
-      label: "Conditions",
-      value: conditions.conditions,
-      icon: <CloudSun color={BLACK} size={16} />,
-    },
-    {
-      label: "Sunset",
-      value: sunset,
-      icon: <Sunset color={BLACK} size={16} />,
-    },
     ...(seaTemp === null
       ? []
       : [
@@ -48,6 +33,21 @@ const BeachConditionsComponent = async ({ cssClasses }: Props) => {
             icon: <Waves color={BLACK} size={16} />,
           },
         ]),
+    {
+      label: "Wind",
+      value: `${windSpeed} km/h ${windDirection}`,
+      icon: <Wind color={BLACK} size={16} />,
+    },
+    {
+      label: "Sunset",
+      value: sunset,
+      icon: <Sunset color={BLACK} size={16} />,
+    },
+    {
+      label: "Conditions",
+      value: conditions.conditions,
+      icon: <CloudSun color={BLACK} size={16} />,
+    },
   ];
 
   return (
