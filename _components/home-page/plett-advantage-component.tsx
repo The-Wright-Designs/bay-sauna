@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ButtonLink from "@/_components/ui/buttons/button-link";
+import ProudSupporterComponent from "./proud-supporter/proud-supporter-component";
 
 export default function PlettAdvantageComponent() {
   return (
@@ -32,6 +33,7 @@ export default function PlettAdvantageComponent() {
         >
           Meet Our Founders
         </ButtonLink>
+        <ProudSupporterComponent cssClasses="hidden desktop:flex desktop:-mb-5" />
       </div>
       <Image
         src="/images/home-page/67489b87bc84e5fef24274257e21c962bc496642.jpg"
@@ -41,6 +43,7 @@ export default function PlettAdvantageComponent() {
         className="aspect-video object-cover desktop:h-full desktop:aspect-auto desktop:w-auto"
         sizes="(max-width: 1279px), 100vw, 620px"
       />
+      <ProudSupporterComponent cssClasses="pt-5 desktop:hidden" />
     </main>
   );
 }

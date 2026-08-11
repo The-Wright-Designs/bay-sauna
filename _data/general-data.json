@@ -70,6 +70,32 @@
         ]
       }
     ],
+    "proudSupporter": [
+      {
+        "image": "/images/sponsorships/child-wellfare-plettenberg-bay-logo.png",
+        "alt": "Child Welfare Plettenberg Bay"
+      },
+      {
+        "image": "/images/sponsorships/nsrip-plettenberg-bay-logo.jpg",
+        "alt": "NSRI Station 14 Plettenberg Bay"
+      },
+      {
+        "image": "/images/sponsorships/child-wellfare-plettenberg-bay-logo.png",
+        "alt": "Child Welfare Plettenberg Bay"
+      },
+      {
+        "image": "/images/sponsorships/nsrip-plettenberg-bay-logo.jpg",
+        "alt": "NSRI Station 14 Plettenberg Bay"
+      },
+      {
+        "image": "/images/sponsorships/child-wellfare-plettenberg-bay-logo.png",
+        "alt": "Child Welfare Plettenberg Bay"
+      },
+      {
+        "image": "/images/sponsorships/nsrip-plettenberg-bay-logo.jpg",
+        "alt": "NSRI Station 14 Plettenberg Bay"
+      }
+    ],
     "saunaEtiquette": [
       {
         "heading": "Please shower at home before arriving",
