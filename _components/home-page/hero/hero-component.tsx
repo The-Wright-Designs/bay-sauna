@@ -8,7 +8,7 @@ export default function HeroComponent() {
   return (
     <section className="max-w-[1280px] mx-auto tablet:grid grid-cols-2 desktop:grid-cols-[830px_1fr]">
       <div className="relative">
-        <div className="hidden desktop:block absolute inset-0 w-full z-10">
+        <div className="hidden desktop:block absolute inset-0 w-full z-10 pointer-events-none">
           <Suspense fallback={<BayConditionsSkeleton />}>
             <BayConditionsComponent />
           </Suspense>

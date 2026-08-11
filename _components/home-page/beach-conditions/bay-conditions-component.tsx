@@ -53,7 +53,7 @@ const BeachConditionsComponent = async ({ cssClasses }: Props) => {
   return (
     <article
       className={classNames(
-        "flex flex-wrap gap-5 py-7 items-center justify-between desktop:bg-white/85 desktop:px-7 desktop:py-3",
+        "flex flex-wrap gap-5 py-7 items-center justify-between pointer-events-auto desktop:bg-white/85 desktop:px-7 desktop:py-3",
         cssClasses,
       )}
     >

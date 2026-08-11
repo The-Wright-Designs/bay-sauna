@@ -11,9 +11,6 @@ export default function VideoComponent() {
     const video = videoRef.current;
     if (!video) return;
 
-    video.setAttribute("muted", "");
-    video.muted = true;
-
     const attemptPlay = () => video.play().catch(() => {});
 
     const playOnInteraction = () => {
@@ -39,8 +36,9 @@ export default function VideoComponent() {
   const toggleMute = () => {
     const video = videoRef.current;
     if (!video) return;
-    video.muted = !video.muted;
-    setMuted(video.muted);
+    const next = !muted;
+    video.muted = next;
+    setMuted(next);
     if (video.paused) video.play().catch(() => {});
   };
 
@@ -50,7 +48,7 @@ export default function VideoComponent() {
         ref={videoRef}
         className="w-full h-[550px] tablet:h-[600px] desktop:h-[660px] object-cover"
         autoPlay
-        muted
+        muted={muted}
         loop
         playsInline
         preload="auto"
@@ -65,7 +63,7 @@ export default function VideoComponent() {
       <button
         onClick={toggleMute}
         aria-label={muted ? "Unmute video" : "Mute video"}
-        className="absolute bottom-4 right-4 bg-black/50 rounded-full p-2 desktop:hover:cursor-pointer desktop:hover:bg-black/70 ease-in-out duration-300"
+        className="absolute bottom-4 right-4 z-20 bg-black/50 rounded-full p-2 desktop:hover:cursor-pointer desktop:hover:bg-black/70 ease-in-out duration-300"
       >
         {muted ? (
           <VolumeOff color="#ffffff" size={20} />
