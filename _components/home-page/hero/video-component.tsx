@@ -46,7 +46,7 @@ export default function VideoComponent() {
     <div className="relative">
       <video
         ref={videoRef}
-        className="w-full h-[550px] tablet:h-[600px] desktop:h-[660px] object-cover"
+        className="w-full aspect-[320/232] tablet:aspect-auto tablet:h-[600px] desktop:h-[660px] object-cover"
         autoPlay
         muted={muted}
         loop
