@@ -72,6 +72,10 @@
     ],
     "proudSupporter": [
       {
+        "image": "/images/sponsorships/shark-spotters-logo.jpg",
+        "alt": "Shark Spotters"
+      },
+      {
         "image": "/images/sponsorships/child-wellfare-plettenberg-bay-logo.png",
         "alt": "Child Welfare Plettenberg Bay"
       },
